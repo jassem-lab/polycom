@@ -1,0 +1,95 @@
+"file:///D:/all_works/darna/darna/draft/temp.html#stylesheet(style[0])",""
+"92 used selectors",""
+,
+img,75
+body,563
+img,566
+a,570
+a:focus,570
+a:hover,570
+body,576
+h3,581
+div,608
+img,608
+p,614
+a,624
+a:hover,624
+a:hover,631
+input,635
+textarea,635
+select,635
+input[type="text"],730
+input[type="email"],730
+input[type="password"],730
+textarea,730
+input[type="text"]:focus,744
+input[type="email"]:focus,744
+input[type="password"]:focus,744
+textarea:focus,744
+textarea,747
+select,751
+body,2561
+.entry-content::after,4264
+.entry-content table,4270
+.entry-content table td,4274
+.entry-content table th,4274
+.entry-content table,4280
+.entry-content table > thead > tr > th,4286
+.entry-content table > tfoot > tr > th,4286
+.entry-content table > tbody > tr > td,4286
+.entry-content table > tfoot > tr > td,4286
+.entry-content table > thead > tr > th,4303
+.entry-content table > thead:first-child > tr:first-child > th,4308
+.entry-content a,4340
+.entry-content a:hover,4344
+.entry-content a:active,4349
+.entry-content input[type="submit"],4353
+.entry-content input[type="submit"]:hover,4368
+.entry-content input[type="submit"]:active,4368
+.entry-content input[type="submit"]:hover,4372
+.entry-content p:last-child,4377
+input.button,4758
+input.button.alt,4758
+input.button:hover,4787
+input.button.alt:hover,4787
+input.button:active,4787
+input.button.alt:active,4787
+input.button:hover,4812
+input.button.alt:hover,4812
+form .form-row input.input-text,4908
+form .form-row textarea,4908
+form .form-row select,4908
+form .form-row,4918
+ul#shipping_method li,6009
+ul#shipping_method li input[type="radio"],6013
+ul#shipping_method li label,6017
+form.checkout_coupon,6024
+form.checkout_coupon input.button,6030
+form.checkout_coupon .form-row,6034
+.billing-fields h3,6047
+#ship-to-different-address,6047
+.checkout-review-order h3#order_review_heading,6047
+#checkout-payment_heading,6047
+form .form-row label,6056
+#ship-to-different-address label,6081
+#ship-to-different-address .input-checkbox,6086
+form .form-row textarea,6090
+table.shop_table.checkout-review-order-table,6094
+table.shop_table.checkout-review-order-table thead th,6100
+table.shop_table.checkout-review-order-table th,6105
+table.shop_table.checkout-review-order-table td,6105
+table.shop_table.checkout-review-order-table td strong,6118
+table.shop_table.checkout-review-order-table tfoot td,6126
+table.shop_table.checkout-review-order-table .product-total,6126
+.checkout #payment,6137
+.checkout #payment ul.payment_methods,6143
+.checkout #payment ul.payment_methods li,6148
+.checkout #payment ul.payment_methods li label,6152
+.checkout #payment ul.payment_methods li input,6158
+.checkout #payment div.payment_box,6161
+.checkout #payment div.payment_box::after,6172
+.checkout #payment div.payment_box::before,6172
+.checkout #payment div.form-row,6176
+#payment #place_order,6180
+.page #payment #place_order,6180
+form.checkout_coupon .form-row,6428

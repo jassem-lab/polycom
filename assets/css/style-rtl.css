@@ -1,0 +1,393 @@
+/*
+ __        __   _                            _                   
+ \ \      / /__| | ___ ___  _ __ ___   ___  | |_ ___             
+  \ \ /\ / / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \            
+   \ V  V /  __/ | (_| (_) | | | | | |  __/ | || (_) |           
+    \_/\_/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/                                                                            
+  ____                           _____ _                         
+ |  _ \  __ _ _ __ _ __   __ _  |_   _| |__   ___ _ __ ___   ___ 
+ | | | |/ _` | '__| '_ \ / _` |   | | | '_ \ / _ \ '_ ` _ \ / _ \
+ | |_| | (_| | |  | | | | (_| |   | | | | | |  __/ | | | | |  __/
+ |____/ \__,_|_|  |_| |_|\__,_|   |_| |_| |_|\___|_| |_| |_|\___|
+                                                                                                                                                                        
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+/* Theme Name:  Darna - from Creative WP.com
+/* Description:  Darna - Multi Purpose Template - RTL version
+/* Author: creative-wp */
+
+
+/* Website: http://creative-wp.com/ */
+
+
+/* Copyright: (C) 2016 */
+
+
+/* All Main Style you can edit from here.
+
+/* ----------------------------------------------------------------
+    Fonts
+-----------------------------------------------------------------*/
+
+
+/* Google Web fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,200,300,400,400italic,500,600,700,700italic,900);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+
+/* colors css */
+
+
+/* RTL css */
+
+@import url(bootstrap-rtl.css);
+
+/* -----------------------------------------------------------------------------nav ------------------ */
+
+@media screen and (min-width: 992px) {
+    .x-caret:before {
+        margin-right: 6px;
+    }
+}
+
+.sticky-header.shrink .navbar-default .navbar-nav>li>a {
+    height: 85px;
+}
+
+
+/*
+.navbar-default .navbar-nav>li>a {
+    margin-left: 20px;
+}*/
+
+.slider {
+    direction: ltr;
+}
+
+.list li:after {
+    content: "\f0a8";
+    font-family: "FontAwesome";
+    margin: 0px 0px 0px 10px;
+    direction: rtl;
+}
+
+.list li:before {
+    content: "  ";
+    margin: 0
+}
+
+.header-3 .header-customize {
+    float: left;
+}
+
+.header-3 .navbar-default .navbar-nav>li>a {
+    direction: ltr;
+}
+
+.header-3 .main-menu-custom-text {
+    float: left;
+}
+
+.radio input[type=radio],
+.radio-inline input[type=radio],
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox] {
+    margin-right: -16px;
+}
+
+.radio label,
+.checkbox label {
+    margin-right: 17px;
+}
+
+ul.breadcrumbs,
+ul.bcrumbs,
+.blog-content-title-wrap .block-center,
+.page-head-shop.overlay-wrap .block-center {
+    direction: rtl;
+    text-align: right
+}
+
+.pull-right {
+    float: left!important;
+}
+
+ul.bcrumbs {
+    display: inline-flex;
+}
+
+.main-menu-custom-text>i.fa {
+    margin-left: 5px;
+}
+
+.home-profile h3 i {
+    margin-left: 15px;
+    float: right;
+}
+
+.nav-tabs li.active:before {
+    border-bottom: 0;
+}
+
+
+/*.owl-carousel .owl-item {
+    float: right;
+}
+
+.widget-posts-thumbnail .owl-carousel .owl-item {
+    float: left;
+}*/
+
+.owl-carousel .owl-wrapper-outer {
+    direction: ltr;
+}
+
+
+/*
+#team-wrap .owl-wrapper-outer {
+    direction: rtl;
+}*/
+
+.header-customize-item .get-a-quote-button>i.fa+span {
+    margin-right: 5px;
+}
+
+.blog-inner .entry-p-format-icon,
+.darna-post .darna-post-image .entry-p-format-icon {
+    float: right;
+    margin-left: 20px;
+}
+
+.blog-inner .entry-p-meta-wrap ul.entry-m li,
+.darna-post .darna-post-image .entry-p-meta-wrap ul.entry-m li {
+    display: inline-block;
+    margin-left: 25px;
+    text-align: right;
+    margin-right: 0;
+}
+
+.blog-inner .entry-p-meta-wrap ul.entry-m li i,
+.darna-post .darna-post-image .entry-p-meta-wrap ul.entry-m li i {
+    margin-left: 4px;
+}
+
+.sidebar .widget_archive li:before,
+.sidebar .widget_categories li:before,
+.sidebar .widget_product_categories li:before,
+.sidebar .widget_nav_menu > div li:before,
+.sidebar .widget_meta li:before,
+.sidebar .widget_pages li:before,
+.sidebar .widget_recent_comments li:before,
+.sidebar .widget_recent_entries li:before,
+.sidebar .widget_rss li:before {
+    content: "\f0d9";
+    margin-right: 5px;
+}
+
+.sidebar .widget-posts-wrap .widget-posts-thumbnail {
+    width: 64px;
+    float: right;
+    margin-left: 15px;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    direction: rtl;
+    right: 50%;
+    padding-right: 40px
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    direction: rtl;
+    right: 50%;
+    padding-right: 40px
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    direction: rtl;
+    right: 50%;
+    padding-right: 40px
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    direction: rtl;
+    right: 50%;
+    padding-right: 40px
+}
+
+.blog-meta:after {
+    left: auto;
+    right: 0;
+}
+
+.home-info-content h4 i {
+    margin-left: 9px;
+}
+
+.blog-meta span {
+    padding-right: 8px;
+    margin-left: 16px;
+}
+
+.blog-meta span {
+    display: inline-block;
+}
+
+.header-customize-item {
+    font-size: 14px;
+    float: right;
+    margin: 0 17px 0 0px!important;
+}
+
+.tb-left ul li i,
+.tb-right ul li i {
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.header-3 .main-menu-custom-text {
+    float: left;
+}
+
+.blog-meta,
+.blog-meta a,
+h3.text-uppercase,
+.blog-excerpt p {
+    text-align: right;
+    direction: rtl;
+}
+
+.blog-meta span {
+    margin-right: 0;
+}
+
+.project-item,
+.project-overlay {
+    text-align: left
+}
+
+#accordion .panel-heading a i {
+    margin-left: 14px;
+    margin-right: 0
+}
+
+.list-inline {
+    padding-right: 0;
+    padding-left: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.feature-box-ico {
+    float: right;
+}
+
+.feature-box h3,
+.feature-box p {
+    padding-right: 100px;
+    padding-left: 0px;
+}
+
+.header-5 .navbar-brand:after {
+    content: '';
+    display: block;
+    left: -30px;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    border-top-width: 132px;
+    border-top-style: solid;
+    border-left: solid 30px transparent;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    border-right: 0;
+}
+
+.tb-right {
+    float: left !important;
+}
+
+.header-5 .navbar-default .navbar-nav>li>a {
+    margin: 0px 30px 0 0px;
+}
+
+.text-center h3 {
+    text-align: center !important;
+}
+
+div#projects-copy+.container a {
+    float: left;
+}
+
+.text-left {
+    text-align: right!important;
+}
+
+.two-items> div,
+.two-items a {
+    float: right;
+}
+
+.spinner-control .input-group-btn-vertical {
+    z-index: 2;
+    left: 79px;
+}
+
+.burger-menu {
+    left: 3%;
+}
+
+.navbar.easy-sidebar {
+    left: auto;
+    right: -242px;
+}
+
+body.toggled .navbar.easy-sidebar {
+    left: auto;
+    right: 242px;
+}
+
+.header-3 .navbar-brand {
+    padding: 15px 35px 15px 0px;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: right!important;
+    }
+}
+
+ul.nav.navbar-nav.navbar-right {
+    float: left!important;
+}
+
+.header-4 .navbar-default {
+    float: left;
+}
+
+@media (min-width: 980px) {
+    .body-boxed .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1009px) {
+    .header-4 .navbar-header {
+        float: right;
+    }
+    header {
+        z-index: 9999 !important
+    }
+}
+
+.navbar.easy-sidebar .navbar-collapse {
+    background: #fff;
+}
