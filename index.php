@@ -51,7 +51,7 @@
                     <h4>Qui sommes-nous</h4>
                     <p>Welcome To <?php echo $title ?></p>
                 </div>
-                <p<?php echo $presentation ?>< /p> <a class="bttn bttn-xs center-block" href="#">Our History</a>
+                <?php echo $presentation ?> <a class="bttn bttn-xs center-block" href="#">Our History</a>
             </div>
         </div>
     </div>
@@ -85,17 +85,15 @@
 			========================================================================= -->
 
 
-
-
 <div class="home-blog">
     <div class="container">
         <div class="content-head text-center text-uppercase">
             <h4>Lastest News</h4>
-            <p>Connect With Us All About <?php echo $title ?></p>
+            <p>Connect With Us All About Darna</p>
         </div>
         <div class="row">
-            <div id="home-posts" class="owl-carousel owl-theme"></div>
-            <?php 
+            <div id="home-posts" class="owl-carousel owl-theme">
+                <?php 
               $reqServ = "select * from services ";
               $queryServ = mysql_query($reqServ) ; 
               while ($enreg = mysql_fetch_array($queryServ)) {
@@ -103,29 +101,29 @@
                 $service      =   $enreg['service'];
                 $image      =   $enreg['image'];
                 $presentation      =   $enreg['presentation'];
-
+              
               ?>
-            <div class="item">
-                <div class="blog-post">
-                    <div class="blog-thumb">
+                <div class="item" key="<?php echo $id ?>">
+                    <div class="blog-post">
+                        <div class="blog-thumb">
+                            <a class="prettyPhoto" data-rel="prettyPhoto" href="<?php echo'sesadmin/'.$image ?>"> <i
+                                    class="fa fa-expand"></i></a> <img alt="" class="img-responsive"
+                                src="<?php echo'sesadmin/'.$image ?>" />
+                        </div>
+                        <div class="blog-excerpt">
+                            <h3 class="text-uppercase"><a href="#"><?php echo $service ?></a></h3>
 
-                        <a class="prettyPhoto" data-rel="prettyPhoto" href="<?php echo 'sesadmin/'.$image ?>"> <i
-                                class="fa fa-expand"></i></a> <img alt="" class="img-responsive"
-                            src="<?php echo 'sesadmin/'.$image ?>" />
+                            <p><?php echo $presentation ?>[...]</p>
+                        </div>
                     </div>
-                    <div class="blog-excerpt">
-                        <h3 class="text-uppercase"><a href="#"><?php echo $service ?></a></h3>
-                        <div class="blog-meta text-uppercase"></div>
-                        <p> <?php echo $presentation ?> [...]</p>
-                    </div>
-
                 </div>
+                <?php } ?>
+
             </div>
-            <?php } ?>
         </div>
     </div>
 </div>
-</div>
+
 
 <!-- /. SERVICES END
 			========================================================================= -->

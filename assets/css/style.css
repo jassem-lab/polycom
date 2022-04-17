@@ -167,7 +167,6 @@ textarea:focus {
 
 .top-bar {
   background-color: #f8f8f8;
- 
 }
 
 .top-bar ul.links {
@@ -188,7 +187,7 @@ textarea:focus {
 .top-bar ul.links li a {
   color: #fff;
   text-decoration: none;
-   color: blue !important ;
+  color: blue !important ;
 }
 
 .top-bar ul.links li a i {
@@ -2314,11 +2313,10 @@ ul.vertical-images li:hover .button {
 }
 
 .content-head {
-  color: #2772DB !important ;
+  color: #2772db !important ;
   position: relative;
   padding-top: 15px;
   margin: 57px 0 60px;
-  
 }
 
 .content-head:before {
@@ -2333,7 +2331,6 @@ ul.vertical-images li:hover .button {
   left: 0;
   right: 0;
   top: 0;
-  
 }
 
 .content-head:after {
@@ -2347,7 +2344,6 @@ ul.vertical-images li:hover .button {
   bottom: -26px;
   left: 0;
   right: 0;
-  
 }
 
 @media screen and (min-width: 0\0) and (min-resolution: +72dpi) {
@@ -4577,21 +4573,21 @@ a#playVid i {
 .page-head-blog,
 .page-head-shop,
 .page-head-project {
-  background: #000 url(../images/head/bg-page-title.jpg) no-repeat center;
+  background: #000 url(../images/spool.jpg) no-repeat center;
   background-size: cover;
   padding: 102px 0px 101px;
 }
 
 .page-head-blog {
-  background: #000 url(../images/head/bg-blog-title.jpg) no-repeat center;
+  background: #000 url(../images/spool.jpg) no-repeat center;
 }
 
 .page-head-shop {
-  background: #000 url(../images/head/bg-shop-title.jpg) no-repeat center;
+  background: #000 url(../images/spool.jpg) no-repeat center;
 }
 
 .page-head-project {
-  background: #000 url(../images/head/bg-project.title.jpg) no-repeat center;
+  background: #000 url(../images/spool.jpg) no-repeat center;
 }
 
 .page-head h1 {
