@@ -36,29 +36,48 @@ function Supprimer(id)
 	if(isset($_POST['enregistrer_mail'])){	
 		
 		$categorie				=	addslashes($_POST["categorie"]) ;
-		$souscategorie			=	addslashes($_POST["souscategorie"]) ;			
+		$souscategorie			=	addslashes($_POST["souscategorie"]) ;	
+		$presentation			=	addslashes($_POST["mytextarea5"]) ;		
 		
 		if($id==0){	
-		
-			$idcategorie = 0;
-			$reqmax="select max(id) as idcategorie from souscategories";
-			$querymax=mysql_query($reqmax);
-			if(mysql_num_rows($querymax)>0){
-				while($enregmax=mysql_fetch_array($querymax)){
-					$idcategorie = $enregmax['idcategorie'] + 1;
-				}
-			} else{
-					$idcategorie = 1;
-			}
 
-			$sql="INSERT INTO `souscategories`(`id`,`categorie`, `souscategorie`) VALUES ('".$idcategorie."','".$categorie."','".$souscategorie."')";
-			$req=mysql_query($sql);
+
+			$type1=pathinfo(basename($_FILES["image"]["name"]), PATHINFO_EXTENSION);
+			$file1=md5($_FILES["image"]["name"].time()).".".$type1;
+			if($type1=="jpg" or $type1=="JPG" or $type1=="jpeg" or $type1=="JPEG" or $type1=="png" or $type1=="PNG" or $type1=="bmp" or $type1=="BMP" or $type1=="gif" or $type1=="GIF"){
+				
+				$path = "assets/images/categorie/".$file1; 
+				$pathcomplete = "assets/images/categorie/".$file1;
+				move_uploaded_file($_FILES['image']['tmp_name'], $pathcomplete);
+
+			echo	$sql="INSERT INTO `souscategories`(`categorie`, `souscategorie`, `logo`, `presentation`) VALUES   ('".$categorie."','".$souscategorie."','".$pathcomplete."','".$presentation."')";
+			} else{
+				$sql="INSERT INTO `souscategories`(`categorie`, `souscategorie`) VALUES ('".$categorie."','".$souscategorie."')";
+			}
+				$req=mysql_query($sql);
 			
+
 		} else{
-			$sql="UPDATE `souscategories` SET `categorie`='".$categorie."', `souscategorie`='".$souscategorie."' where id=".$id;
-			$req=mysql_query($sql);		
+
+			$type1=pathinfo(basename($_FILES["image"]["name"]), PATHINFO_EXTENSION);
+			$file1=md5($_FILES["image"]["name"].time()).".".$type1;
+			if($type1=="jpg" or $type1=="JPG" or $type1=="jpeg" or $type1=="JPEG" or $type1=="png" or $type1=="PNG" or $type1=="bmp" or $type1=="BMP" or $type1=="gif" or $type1=="GIF"){
+				
+				$path = "assets/images/categorie/".$file1; 
+				$pathcomplete = "assets/images/categorie/".$file1;
+				move_uploaded_file($_FILES['image']['tmp_name'], $pathcomplete);
+
+			echo	$sql="UPDATE `souscategories` SET `categorie`='".$categorie."', `souscategorie`='".$souscategorie."', `logo`='".$pathcomplete."', `presentation`='".$presentation."' where id=".$id;
+			} else{
+				$sql="UPDATE `souscategories` SET `categorie`='".$categorie."', `souscategorie`='".$souscategorie."', `presentation`='".$presentation."'  where id=".$id;
+			}
+				$req=mysql_query($sql);
+			
+
+
 		}
-		echo '<SCRIPT LANGUAGE="JavaScript">document.location.href="?suc=succes" </SCRIPT>';
+
+		//echo '<SCRIPT LANGUAGE="JavaScript">document.location.href="?suc=succes" </SCRIPT>';
 	}
 
 	$categorie			=	"0" ;	

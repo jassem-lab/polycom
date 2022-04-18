@@ -3246,7 +3246,7 @@ ul.vertical-images li:hover .button {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgba(255, 182, 0, 0.7);
+  background: rgba(0, 68, 255, 0.7);
   top: 0;
   left: 0;
   right: 0;
@@ -7794,7 +7794,7 @@ blockquote cite {
 }
 
 footer {
-  background: url(../images/footer.jpg) no-repeat fixed;
+ 
   background-size: cover;
   padding: 60px 0 0;
 }

@@ -31,7 +31,7 @@
             '".$visitor_email."','".$visitor_subject."')";
           
         if(mysqli_query($conn, $sql)){
-            echo '<SCRIPT LANGUAGE="JavaScript">document.location.href="contact.php?suc=succes" </SCRIPT>';
+            echo '<SCRIPT LANGUAGE="JavaScript">document.location.href="contact.php?succ=succes" </SCRIPT>';
         } else{
             echo "ERROR: Hush! Sorry $sql. " 
                 . mysqli_error($conn);

@@ -75,10 +75,10 @@
         </div>
     </form>
 </div>
-<?php if(isset($_GET['suc'])){ ?>
-<?php if($_GET['suc']=='succes'){ ?>
-<div class="alert alert-primary" role="alert">
-    <font color="blue">
+<?php if(isset($_GET['succ'])){ ?>
+<?php if($_GET['succ']=='succes'){ ?>
+<div class="alert alert-success m-5 pt-5" role="alert">
+    <font color="green">
         <center>Merci beaucoup pour votre message. Nous vérifions fréquemment vos e-mails et ferons de notre mieux pour
             répondre à votre demande</center>
     </font><br /><br />

@@ -1,3 +1,5 @@
+
+
 <?php
 $title = "";
 $logo = "";
@@ -99,10 +101,10 @@ while ($enreg = mysql_fetch_array($query)) {
             <div class="row">
                 <div class="col-md-6">
                     <ul class="footer-menu list-inline text-uppercase">
-                        <li class="active"><a href="index.php">Home</a></li>
+                        <li class="active"><a href="index.php">Acceuil</a></li>
                         <li><a href="#">Services</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="presentation.php">Presentation</a></li>
+                        <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6">

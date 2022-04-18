@@ -23,14 +23,17 @@
 <div class="home-profile">
     <div class="container">
         <div class="row">
+            <img class="col-md-3" src="sesadmin/assets/images/categorie/piscine.jpg" alt="" />
 
-            <div class="col-md-6">
+            <div class="col-md-9">
+
                 <h3><i class="fa fa-suitcase"></i> <a href="index.php"><?php echo $title ?></a></h3>
                 <p><?php echo $presentation ?>
                 </p>
                 <div class="row">
-                   
+
                 </div><a class="bttn bttn-sm btn-primary" href="#">View Our Projects</a>
+
             </div>
         </div>
     </div>

@@ -110,9 +110,7 @@ while ($enreg = mysql_fetch_array($query)) {
                             <a href="<?php echo $mail ?>" target="_blank">
                                 <i class="fa fa-google-plus"></i></a>
                         </li>
-                        <li>
-                            <a href="<?php echo $youtube ?>" target="_blank"><i class="fa fa-youtube"> </i></a>
-                        </li>
+
                     </ul>
                 </div>
                 <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
@@ -140,8 +138,7 @@ while ($enreg = mysql_fetch_array($query)) {
                 <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                   LOGO START
                   -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                <a class="navbar-brand" href="index.php">
-                    <img style="max-width : 120px" alt="logo" src="<?php echo 'sesadmin/'.$logo ?>" /></a>
+
                 <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                   LOGO END
                   -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
@@ -149,10 +146,6 @@ while ($enreg = mysql_fetch_array($query)) {
             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                MENU START
                -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-
-
-
-
             <nav class="navbar navbar-default">
                 <div class="container">
                     <div id="navbar" class="navbar-collapse">
@@ -160,7 +153,8 @@ while ($enreg = mysql_fetch_array($query)) {
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                            MENU HOME START
                            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-
+                            <a class="navbar-brand" href="index.php">
+                                <img style="max-width : 120px" alt="logo" src="<?php echo 'sesadmin/'.$logo ?>" /></a>
 
                             <li class="">
                                 <a href="index.php" role="button">
@@ -169,6 +163,10 @@ while ($enreg = mysql_fetch_array($query)) {
                             <li class="">
                                 <a href="presentation.php" role="button">
                                     Presentation</a>
+                            </li>
+                            <li class="">
+                                <a href="reference.php" role="button">
+                                    Référence</a>
                             </li>
                             <?php 
         
@@ -189,17 +187,13 @@ while ($enreg = mysql_fetch_array($query)) {
                                 $query2 = mysql_query($req2);                         
                                 while($enreg2=mysql_fetch_array($query2)){ ?>
                                     <li><a
-                                            href="sousCategorie.php?ID=<?php echo $enreg2['souscategorie']; ?>"><?php echo $enreg2['souscategorie']; ?></a>
+                                            href="sousCategorie.php?ID=<?php echo $enreg2['id']; ?>"><?php echo $enreg2['souscategorie']; ?></a>
                                     </li>
                                     <?php
                           }
                           ?>
-
-
                                 </ul>
                             </li>
-
-
                             <?php 
                            }
                         ?>
@@ -207,7 +201,6 @@ while ($enreg = mysql_fetch_array($query)) {
                                 <a href="contact.php" role="button">
                                     Contact</a>
                             </li>
-
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                            SHOPCART, SEARCH AND GET QUOTE AREA START
                            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
@@ -221,13 +214,6 @@ while ($enreg = mysql_fetch_array($query)) {
                                 </div>
 
 
-                                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
-                              QUOTE AREA START
-                              -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                                <div class="get-a-quote-wrapper header-customize-item">
-                                    <a class="get-a-quote-button" href="#quote">
-                                        <i class="fa fa-envelope"></i><span>Get a quote</span></a>
-                                </div>
                             </li>
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                            SHOPCART, SEARCH AND GET QUOTE AREA END
