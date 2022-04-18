@@ -45,19 +45,115 @@
 <div class="home-about">
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-sm-12 col-xs-12"> <img alt="" class="img-responsive" src="assets/images/indexPic.jpg" />
+            <div class="col-md-5 col-sm-12 col-xs-12"> <img alt="" class="img-responsive"
+                    src="assets/images/indexPic.jpg" />
             </div>
             <div class="col-md-7 col-sm-12 col-xs-12 text-center">
                 <div class="content-head text-uppercase">
                     <h4>Qui sommes-nous</h4>
                     <p>Bienvenue chez <?php echo $title ?></p>
                 </div>
-                <?php echo $presentation ?> <a class="bttn bttn-xs center-block" href="#">Our History</a>
+                <?php echo $presentation ?> 
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+<div class="service-box1 overlay-wrap">
+    <div class="overlay"> </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="s1-box text-center">
+                    <h4>01 <i class="fa fa-long-arrow-right"></i></h4>
+                    <h5><a href="#">étude</a></h5>
+                    <p>L'étude consiste à explorer tous les concepts du projet tout en permettant de répondre à un
+                        besoin exprimé en termes d'objectif à atteindre (qualité, coûts, délais).</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="s1-box text-center">
+                    <h4>02 <i class="fa fa-long-arrow-right"></i></h4>
+                    <h5><a href="#">Conseil</a></h5>
+                    <p>Il s'agit notamment de fournir des réponses aux problématiques qu'ils rencontrent et d'apporter
+                        de manière proactive des solutions à long terme.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="s1-box text-center">
+                    <h4>03 <i class="fa fa-long-arrow-right"></i></h4>
+                    <h5><a href="#">Installation</a></h5>
+                    <p>L'installation d'un bassin hors-sol ou semi-enterré</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="s1-box text-center">
+                    <h4>04</h4>
+                    <h5><a href="#">Maintenance</a></h5>
+                    <p>Ensemble des opérations permettant de maintenir ou de rétablir un matériel, un appareil, un
+                        véhicule, etc., dans un état donné, ou de lui restituer des caractéristiques de fonctionnement
+                        spécifiées.</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+<div class="service-box2">
+    <div class="container">
+        <div class="content-head text-center text-uppercase">
+            <h4>CE QUE NOUS OFFRONS</h4>
+            <p>Toujours dévoué</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="s2-box text-center"> <span class="s2-box-ico"><i class="flaticon-hammer38"></i>
+                    </span>
+                    <h3><a href="#">Accessoires</a></h3>
+                    <p>Les unités de filtration par cartouche sont généralement les plus efficaces et économiques pour des applications traitant des effluents ayant une contamination inférieure à 100 ppm. Pour des contaminations plus élevées, la filtration par cartouche est typiquement utilisée en fin de process.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="s2-box text-center"> <span class="s2-box-ico"><i class="flaticon-tractor"></i>
+                    </span>
+                    <h3><a href="#">Adoucisseurs</a></h3>
+                    <p>La dureté de l'eau provient de certains sels. Elle est principalement due aux ions Calcium (Ca2+), Magnésium (Mg2+) et Bicarbonate (HCO3-). Ces ions ou minéraux peuvent poser des problèmes d’entartrage dans les canalisations d'eau chaude, les appareillages d'eau potable et les systèmes de traitement d'eau. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="s2-box text-center"> <span class="s2-box-ico"><i class="flaticon-power30"></i>
+                    </span>
+                    <h3><a href="#">Piscines</a></h3>
+                    <p>Vous rêvez d’une piscine ? Vous avez encore des doutes sur la question ? Voici deux articles pour répondre à vos interrogations et casser les idées reçues sur le fait d’avoir une piscine chez soi. Une piscine peut se différencier par sa technique de construction et de pose, par sa forme et son design ou par son emplacement. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="s2-box text-center"> <span class="s2-box-ico"><i class="flaticon-paint49"></i>
+                    </span>
+                    <h3><a href="#">Thalasso</a></h3>
+                    <p>Une cure de thalassothérapie se déroule dans un institut en bord de mer. La thalassothérapie est basée sur les bienfaits de l'eau de mer et de l'environnement marin riche en sels minéraux comme les algues, la boue marine et l'air marin. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="s2-box text-center"> <span class="s2-box-ico"><i class="fa fa-bolt"></i></span>
+                    <h3><a href="#">Cabines Infrarouges</a></h3>
+                    <p>Le sauna est une tradition sociale et familiale finlandaise et estonienne depuis plus de 2 000 ans. À l'origine, les saunas étaient de petites cabanes construites avant même la maison d'habitation.   </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="s2-box text-center"> <span class="s2-box-ico"><i class="flaticon-leaf32"></i>
+                    </span>
+                    <h3><a href="#">Saunas Spéciaux</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- /. VIDEO START
 			========================================================================= -->
 

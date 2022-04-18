@@ -2797,8 +2797,8 @@ ul.vertical-images li:hover .button {
 }
 
 .service-box1 {
-  background: #000 url(../images/bg/1.jpg) no-repeat center top;
-  background-size: cover;
+  background:  url(../images/p.jpg) no-repeat 30% 70%;
+  background-size: cover ;
   padding: 100px 0 90px;
 }
 
@@ -3965,6 +3965,7 @@ ul.vertical-images li:hover .button {
   font-size: 32px;
   line-height: 60px;
   color: #fff;
+  background-color: blue;
 }
 
 .s2-box:hover .s2-box-ico {
