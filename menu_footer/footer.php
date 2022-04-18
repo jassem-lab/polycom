@@ -49,22 +49,10 @@ while ($enreg = mysql_fetch_array($query)) {
                 <div class="footer-widget">
                     <h5>Navigations</h5>
                     <div id="tweecool">
-                        <?php 
-        
-        $req = "select * from categorie  limit 3";
-        $query = mysql_query($req);
-        while ($enreg = mysql_fetch_array($query)) {
-         ?>
-                        <li>
-                        <li href="categorie.php?ID= <?php echo $enreg['id']; ?>" role="button">
-                            <?php echo $enreg['categorie']; ?> <span class="x-caret"></span></li>
-                        </ul>
-                        </li>
-
-
-                        <?php 
-        }
-     ?>
+                        <li class="tweecool_list"><a href="index.php">Acceuil</a></li>
+                        <li class="tweecool_list"><a href="#">Services</a></li>
+                        <li class="tweecool_list"><a href="presentation.php">Presentation</a></li>
+                        <li class="tweecool_list"><a href="contact.php">Contact</a></li>
                     </div>
                 </div>
             </div>
@@ -99,20 +87,14 @@ while ($enreg = mysql_fetch_array($query)) {
         </div>
         <div class="footer-copyright">
             <div class="row">
-                <div class="col-md-6">
-                    <ul class="footer-menu list-inline text-uppercase">
-                        <li class="active"><a href="index.php">Acceuil</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="presentation.php">Presentation</a></li>
-                        <li><a href="contact.php">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
+              
+                <div>
                     <p class="pull-right text-uppercase">
                         &copy; 2022 <?php echo $title ?> Construction is proudly powered by
-                        <a href="#">DeltaWeb</a>
+                         <a href="https://www.deltawebit.com/contact.php">DeltaWeb Information Technology</a> 
                     </p>
                 </div>
+                
             </div>
         </div>
     </div>

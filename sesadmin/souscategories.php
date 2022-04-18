@@ -67,7 +67,7 @@ function Supprimer(id)
 				$pathcomplete = "assets/images/categorie/".$file1;
 				move_uploaded_file($_FILES['image']['tmp_name'], $pathcomplete);
 
-			echo	$sql="UPDATE `souscategories` SET `categorie`='".$categorie."', `souscategorie`='".$souscategorie."', `logo`='".$pathcomplete."', `presentation`='".$presentation."' where id=".$id;
+				$sql="UPDATE `souscategories` SET `categorie`='".$categorie."', `souscategorie`='".$souscategorie."', `logo`='".$pathcomplete."', `presentation`='".$presentation."' where id=".$id;
 			} else{
 				$sql="UPDATE `souscategories` SET `categorie`='".$categorie."', `souscategorie`='".$souscategorie."', `presentation`='".$presentation."'  where id=".$id;
 			}
@@ -77,7 +77,7 @@ function Supprimer(id)
 
 		}
 
-		//echo '<SCRIPT LANGUAGE="JavaScript">document.location.href="?suc=succes" </SCRIPT>';
+		echo '<SCRIPT LANGUAGE="JavaScript">document.location.href="?suc=succes" </SCRIPT>';
 	}
 
 	$categorie			=	"0" ;	

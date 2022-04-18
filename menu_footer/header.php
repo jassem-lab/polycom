@@ -15,6 +15,7 @@ while ($enreg = mysql_fetch_array($query)) {
     $adresse1 = $enreg['adresse1'] ; 
     $facebook = $enreg['facebook'] ; 
     $youtube = $enreg['youtube'] ; 
+    $instagram = $enreg['instagram'] ; 
 
 }
 ?>
@@ -110,6 +111,10 @@ while ($enreg = mysql_fetch_array($query)) {
                             <a href="<?php echo $mail ?>" target="_blank">
                                 <i class="fa fa-google-plus"></i></a>
                         </li>
+                        <li>
+                            <a href="<?php echo $instagram ?>" target="_blank">
+                                <i class="fa fa-instagram"></i></a>
+                        </li>
 
                     </ul>
                 </div>
@@ -132,16 +137,7 @@ while ($enreg = mysql_fetch_array($query)) {
                   BURGR MENU STARTS
                   -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
                 <button class="burger-menu easy-sidebar-toggle"></button>
-                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
-                  BURGR MENU END
-                  -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
-                  LOGO START
-                  -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-
-                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
-                  LOGO END
-                  -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+              
             </div>
             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                MENU START

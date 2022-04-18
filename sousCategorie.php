@@ -13,7 +13,7 @@ $reqSousCategorie = "select * from souscategories where id=".$_GET['ID'];
  }
 ?>
 <?php
-$reqOtherCat = "select * from souscategories where categorie =" .$categorieId;
+$reqOtherCat = "select * from souscategories where categorie =" .$categorieId." and id<>".$_GET['ID'];
 $query = mysql_query($reqOtherCat) ; 
 while($enreg = mysql_fetch_array($query)){
     $autreSousCategorie = $enreg['souscategorie'];
@@ -52,8 +52,8 @@ while($enreg = mysql_fetch_array($query)){
     <main role="main" class="site-content-archive">
         <div class="container">
             <div class="row">
-                <div style="height : 600px !important" id="owl-item" class="item-slider col-lg-12">
-                    <img src="<?php echo'sesadmin/'.$sousCategorieImage ?>" />
+                <div id="owl-item" class="item-slider col-lg-12">
+                    <img style="height : 600px !important" src="<?php echo'sesadmin/'.$sousCategorieImage ?>" />
                 </div>
                 <div class="row">
                     <div class=" content-wrap  col-lg-12">
@@ -64,21 +64,23 @@ while($enreg = mysql_fetch_array($query)){
                                     <?php echo $sousCategorie ?></h5>
                                 <p><?php echo $sousCategoriePresentation ?></p>
                             </div>
-                            <div class="portfolio-info-box share">
-                                <h6 class="menu-font">Share:</h6> <img src="images/share.png" alt="">
-                                <div class="portfolio-term icon-wrap"> <span><a class="facebook bold-color" href="#">
-                                            <i class="fa fa-facebook"></i></a></span><span>
-                                        <a class="bold-color" href="#">
-                                            <i class="fa fa-twitter"></i></a></span><span>
-                                        <a class="bold-color" href="#">
-                                            <i class="fa fa-google-plus"></i></a></span></div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="projects-contents">
                 <div class="container">
+                <?php
+$reqOtherCat = "select * from souscategories where categorie =" .$categorieId." and id<>".$_GET['ID'];
+$query = mysql_query($reqOtherCat) ; 
+while($enreg = mysql_fetch_array($query)){
+    $autreSousCategorie = $enreg['souscategorie'];
+    $autreSousCategoriePresentation = $enreg['presentation'];
+    $autreSousCategorieId = $enreg['id'];
+    $autreSousCategorieImage = $enreg['logo'];
+
+?>
                     <div class="content-head content-head text-center text-uppercase">
                         <h4>D'autres
                             PROJETS</h4>
@@ -88,22 +90,25 @@ while($enreg = mysql_fetch_array($query)){
                 <div class="container-fluid no-padding">
                     <div class="project-info">
                         <div id="home-projects" class="owl-carousel">
+
                             <div class="project-item item Architecture Construction"> <img alt="" class="img-responsive"
                                     src="<?php echo 'sesadmin/'.$autreSousCategorieImage ?>" />
                                 <div class="project-overlay">
-                                    <h4><a href="#"><?php echo $autreSousCategorie ?></a></h4> <a class="project-view"
-                                        href="#"><i class="fa fa-link">
+                                    <h4><a
+                                            href="sousCategorie.php?ID=<?php echo $autreSousCategorieId; ?>"><?php echo $autreSousCategorie ?></a>
+                                    </h4> <a class="project-view"
+                                        href="sousCategorie.php?ID=<?php echo $autreSousCategorieId; ?>"><i
+                                            class="fa fa-link">
                                         </i></a>
-                                    <a class="project-expand prettyPhoto" data-rel="prettyPhoto"
-                                    href="sousCategorie.php?ID=<?php echo $autreSousCategorieId; ?>">
-                                        <i class="fa fa-arrows-alt"></i></a>
+
                                 </div>
                             </div>
                         </div>
+                       
                         <div id="projects-copy" class="hide"> </div>
                     </div>
                 </div>
-
+                <?php } ?>
             </div>
     </main>
 </div>

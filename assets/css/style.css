@@ -7905,6 +7905,11 @@ footer .overlay-footer {
   line-height: 23px;
   margin-top: -2px;
 }
+.tweecool_list a {
+  color: #8f8f8f !important;
+  font-size: 12px;
+ 
+}
 
 #tweecool a {
   color: #fff;
