@@ -8,7 +8,7 @@
         <div class="row">
         <?php 
                             
-                            $reqRef = "select * from partenaires  ";
+                            $reqRef = "select * from partenaires";
                             $query = mysql_query($reqRef);
                             while ($enreg = mysql_fetch_array($query)) {
                                 $refTitle      =   $enreg['titre'];

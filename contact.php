@@ -37,9 +37,16 @@
     </div>
 </div>
 <div class="google-map">
-    <iframe
+    <!-- <iframe
         src="https://www.google.com/maps/embed/v1/place?q=place_id:Ej1Bdi4gZHUgR3JhbmQgTWFnaHJlYiBBcmFiZSwgWmFvdWl0LUtzaWJhdCAtIFRocmF5ZXR0LCBUdW5pc2lhIi4qLAoUChIJT2poOK0KAhMRpn3DBj0BT7USFAoSCY-Nyk-mCgITEaZxvrw25EdV&key=AIzaSyBzBaETPuAL9gI50bm7LxuFpcL2URxfUC8"
-        class="googlframe"></iframe>
+        class="googlframe"></iframe> -->
+
+    <iframe id="gmap_canvas" class="googlframe"
+        src="https://maps.google.com/maps?q=72%20Avenue%20du%20Grand%20Maghreb%20Arabe,%20Khzema%20Sousse&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+
+
 </div>
 
 <div class="contact-form">
