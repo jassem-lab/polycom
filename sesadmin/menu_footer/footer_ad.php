@@ -5,7 +5,13 @@
 		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
 		<!--End Back To Top Button-->
 		<footer class="page-footer">
-			<p class="mb-0">Copyright <?php echo utf8_encode('©'); ?> 2022 PolyCom  - Plateforme <?php echo utf8_encode('créé par'); ?>  <a href="http:\\www.deltawebit.com\contact.php" target="_blanc" style="color:#0d7cbc"> Delta Web it</a></p>
+		<div class="row">
+			<div class="col-12">
+			<p class="text-muted"><b  style="color:#102677">  Â© 2022 Polycom - Application crÃ©Ã©e par </b>
+			<a href="http://www.deltawebit.com/contact.php" target="_blank"><b  style="color:red">Delta Web Information Technology</b></a>
+			</p>
+		  </div>
+		</div>
 		</footer>
 	</div>
 	<!--end wrapper-->

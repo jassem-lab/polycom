@@ -137,7 +137,7 @@ while ($enreg = mysql_fetch_array($query)) {
                   BURGR MENU STARTS
                   -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
                 <button class="burger-menu easy-sidebar-toggle"></button>
-              
+
             </div>
             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                MENU START
@@ -160,13 +160,10 @@ while ($enreg = mysql_fetch_array($query)) {
                                 <a href="presentation.php" role="button">
                                     Presentation</a>
                             </li>
-                            <li class="">
-                                <a href="reference.php" role="button">
-                                    Référence</a>
-                            </li>
+
                             <?php 
         
-                           $req = "select * from categorie  limit 3";
+                           $req = "select * from categorie  limit 5";
                            $query = mysql_query($req);
                            while ($enreg = mysql_fetch_array($query)) {
                             ?>
@@ -190,9 +187,11 @@ while ($enreg = mysql_fetch_array($query)) {
                           ?>
                                 </ul>
                             </li>
+
                             <?php 
                            }
                         ?>
+
                             <li class="">
                                 <a href="contact.php" role="button">
                                     Contact</a>

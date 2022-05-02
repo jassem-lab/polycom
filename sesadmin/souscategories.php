@@ -2,6 +2,7 @@
 	include('menu_footer/menu_ad.php');
 	include('connexion/cn.php');
 ?>
+<script src="../assets/ckeditor/ckeditor.js"></script>
 <script>
 function Supprimer(id)
 	  {
@@ -132,9 +133,12 @@ function Supprimer(id)
 								<img src="<?php echo $image; ?>" style="width:50px">
 							<?php } ?>							
 						</div>										
-						<div class="col-md-5">
+						<div class="">
 							<b>Présentation</b><br>
-							<textarea id="mytextarea5" name="mytextarea5" class="form-control"><?php echo $presentation; ?></textarea>
+                            <textarea name="mytextarea5" id="mytextarea5"><?php echo $presentation ?></textarea>
+                            <script>
+                    CKEDITOR.replace('mytextarea5');
+                    </script>
 						</div>						
 						<div class="col-md-2"><br>
 								<button type="submit" onclick="CreateTodo();" class="btn btn-primary"   style="background-color:#0d7cbc;border-color: #8833ff;">Enregistrer</button>

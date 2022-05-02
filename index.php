@@ -53,9 +53,9 @@
                     <h4>Qui sommes-nous</h4>
                     <p>Bienvenue chez <?php echo $title ?></p>
                 </div>
-                <?php echo $presentation ?> 
+               <div> <?php echo $presentation ?></div>
             </div>
-          
+
         </div>
     </div>
 </div>
@@ -111,21 +111,30 @@
                 <div class="s2-box text-center"> <span class="s2-box-ico"><i class="flaticon-hammer38"></i>
                     </span>
                     <h3><a href="#">Accessoires</a></h3>
-                    <p>Les unités de filtration par cartouche sont généralement les plus efficaces et économiques pour des applications traitant des effluents ayant une contamination inférieure à 100 ppm. Pour des contaminations plus élevées, la filtration par cartouche est typiquement utilisée en fin de process.</p>
+                    <p>Les unités de filtration par cartouche sont généralement les plus efficaces et économiques pour
+                        des applications traitant des effluents ayant une contamination inférieure à 100 ppm. Pour des
+                        contaminations plus élevées, la filtration par cartouche est typiquement utilisée en fin de
+                        process.</p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="s2-box text-center"> <span class="s2-box-ico"><i class="flaticon-tractor"></i>
                     </span>
                     <h3><a href="#">Adoucisseurs</a></h3>
-                    <p>La dureté de l'eau provient de certains sels. Elle est principalement due aux ions Calcium (Ca2+), Magnésium (Mg2+) et Bicarbonate (HCO3-). Ces ions ou minéraux peuvent poser des problèmes d’entartrage dans les canalisations d'eau chaude, les appareillages d'eau potable et les systèmes de traitement d'eau. </p>
+                    <p>La dureté de l'eau provient de certains sels. Elle est principalement due aux ions Calcium
+                        (Ca2+), Magnésium (Mg2+) et Bicarbonate (HCO3-). Ces ions ou minéraux peuvent poser des
+                        problèmes d’entartrage dans les canalisations d'eau chaude, les appareillages d'eau potable et
+                        les systèmes de traitement d'eau. </p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="s2-box text-center"> <span class="s2-box-ico"><i class="flaticon-power30"></i>
                     </span>
                     <h3><a href="#">Piscines</a></h3>
-                    <p>Vous rêvez d’une piscine ? Vous avez encore des doutes sur la question ? Voici deux articles pour répondre à vos interrogations et casser les idées reçues sur le fait d’avoir une piscine chez soi. Une piscine peut se différencier par sa technique de construction et de pose, par sa forme et son design ou par son emplacement. </p>
+                    <p>Vous rêvez d’une piscine ? Vous avez encore des doutes sur la question ? Voici deux articles pour
+                        répondre à vos interrogations et casser les idées reçues sur le fait d’avoir une piscine chez
+                        soi. Une piscine peut se différencier par sa technique de construction et de pose, par sa forme
+                        et son design ou par son emplacement. </p>
                 </div>
             </div>
         </div>
@@ -134,13 +143,17 @@
                 <div class="s2-box text-center"> <span class="s2-box-ico"><i class="flaticon-paint49"></i>
                     </span>
                     <h3><a href="#">Thalasso</a></h3>
-                    <p>Une cure de thalassothérapie se déroule dans un institut en bord de mer. La thalassothérapie est basée sur les bienfaits de l'eau de mer et de l'environnement marin riche en sels minéraux comme les algues, la boue marine et l'air marin. </p>
+                    <p>Une cure de thalassothérapie se déroule dans un institut en bord de mer. La thalassothérapie est
+                        basée sur les bienfaits de l'eau de mer et de l'environnement marin riche en sels minéraux comme
+                        les algues, la boue marine et l'air marin. </p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="s2-box text-center"> <span class="s2-box-ico"><i class="fa fa-bolt"></i></span>
                     <h3><a href="#">Cabines Infrarouges</a></h3>
-                    <p>Le sauna est une tradition sociale et familiale finlandaise et estonienne depuis plus de 2 000 ans. À l'origine, les saunas étaient de petites cabanes construites avant même la maison d'habitation.   </p>
+                    <p>Le sauna est une tradition sociale et familiale finlandaise et estonienne depuis plus de 2 000
+                        ans. À l'origine, les saunas étaient de petites cabanes construites avant même la maison
+                        d'habitation. </p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
