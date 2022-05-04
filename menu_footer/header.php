@@ -93,7 +93,7 @@ while ($enreg = mysql_fetch_array($query)) {
                         <li><i class="fa fa-phone"></i>Appelez-nous <?php echo $tel1 ?></li>
                         <li>
                             <i class="fa fa-envelope"></i>
-                            <a href="<?php echo $mail ?>"><?php echo $mail ?></a>
+                            <a href="mailto:<?php echo $mail ?>"><?php echo $mail ?></a>
                         </li>
                     </ul>
                 </div>
@@ -110,7 +110,8 @@ while ($enreg = mysql_fetch_array($query)) {
                         </li>
 
                         <li>
-                            <a href="<?php echo $mail ?>" target="_blank">
+                       
+                            <a href="mailto:<?php echo $mail ?>" target="_blank">
                                 <i class="fa fa-google-plus"></i></a>
                         </li>
 
@@ -127,7 +128,7 @@ while ($enreg = mysql_fetch_array($query)) {
                         <i class="fa fa-instagram"></i></a>
                         </li>';
                         }
-                        ?>  
+                        ?>
                     </ul>
                 </div>
                 <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
@@ -182,8 +183,7 @@ while ($enreg = mysql_fetch_array($query)) {
                             ?>
                             <li class="dropdown">
                                 <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
-                                    data-toggle="dropdown" href="categorie.php?ID= <?php echo $enreg['id']; ?>"
-                                    role="button">
+                                    data-toggle="dropdown" role="button">
                                     <?php echo $enreg['categorie']; ?> <span class="x-caret"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-left">
                                     <?php 
