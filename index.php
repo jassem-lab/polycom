@@ -208,15 +208,14 @@
         <div class="row">
             <div id="home-posts" class="owl-carousel owl-theme">
                 <?php 
-              $reqServ = "select * from categorie ";
+              $reqServ = "select * from categorie";
               $queryServ = mysql_query($reqServ) ; 
               while ($enreg = mysql_fetch_array($queryServ)) {
                 $id      =   $enreg['id'];
                 $service      =   $enreg['categorie'];
                 $image      =   $enreg['logo'];
-          
-              
               ?>
+              
                 <div class="item" key="<?php echo $id ?>">
                     <div class="blog-post">
                         <div class="blog-thumb">

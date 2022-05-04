@@ -127,9 +127,7 @@ while ($enreg = mysql_fetch_array($query)) {
                         <i class="fa fa-instagram"></i></a>
                         </li>';
                         }
-                        ?>
-                     
-
+                        ?>  
                     </ul>
                 </div>
                 <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
