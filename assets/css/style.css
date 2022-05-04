@@ -270,15 +270,15 @@ textarea:focus {
 
 /* -----------------------------------------------------------------------------NAVIGATION ------------------ */
 
-.navbar-brand {
+/* .navbar-brand {
   float: left;
   height: auto;
-  padding-top: 23px;
-  /* padding-bottom: 29px;*/
+
+
   z-index: 999999;
   position: relative;
-}
-
+} */
+  /* padding-bottom: 29px;*/
 .navbar {
   position: relative;
   min-height: auto;
@@ -635,10 +635,10 @@ nav.navigation-07.navbar-default .navbar-nav .searchlink {
   transition: all 2s ease;
 }
 
-nav.navigation-07.navbar-default .navbar-nav > li > a.navbar-brand {
+/* nav.navigation-07.navbar-default .navbar-nav > li > a.navbar-brand {
   padding-top: 20px;
   padding-bottom: 16px;
-}
+} */
 
 nav.navigation-07.navbar-default .navbar-nav > li > a {
   color: #fff;

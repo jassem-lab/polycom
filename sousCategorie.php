@@ -71,28 +71,30 @@ while($enreg = mysql_fetch_array($query)){
             </div>
             <div class="projects-contents">
                 <div class="container">
-                <?php
-$reqOtherCat = "select * from souscategories where categorie =" .$categorieId." and id<>".$_GET['ID'];
-$query = mysql_query($reqOtherCat) ; 
-while($enreg = mysql_fetch_array($query)){
-    $autreSousCategorie = $enreg['souscategorie'];
-    $autreSousCategoriePresentation = $enreg['presentation'];
-    $autreSousCategorieId = $enreg['id'];
-    $autreSousCategorieImage = $enreg['logo'];
 
-?>
+
                     <div class="content-head content-head text-center text-uppercase">
                         <h4>D'autres
                             PROJETS</h4>
                         <p>Experience &amp; créativité</p>
                     </div>
                 </div>
+              
                 <div class="container-fluid no-padding">
                     <div class="project-info">
                         <div id="home-projects" class="owl-carousel">
-
+                        <?php  $reqOtherCat = "select * from souscategories where categorie =" .$categorieId." and id<>".$_GET['ID'];
+                        $query = mysql_query($reqOtherCat) ; 
+                        while($enreg = mysql_fetch_array($query)){
+                            $autreSousCategorie = $enreg['souscategorie'];
+                            $autreSousCategoriePresentation = $enreg['presentation'];
+                            $autreSousCategorieId = $enreg['id'];
+                            $autreSousCategorieImage = $enreg['logo'];
+                        
+                        ?>
                             <div class="project-item item Architecture Construction"> <img alt="" class="img-responsive"
-                                    src="<?php echo 'sesadmin/'.$autreSousCategorieImage ?>" />
+                                    src="<?php echo 'sesadmin/'.$autreSousCategorieImage ?>"
+                                    style="height :200px !important ; width : 250px !important" />
                                 <div class="project-overlay">
                                     <h4><a
                                             href="sousCategorie.php?ID=<?php echo $autreSousCategorieId; ?>"><?php echo $autreSousCategorie ?></a>
@@ -103,14 +105,16 @@ while($enreg = mysql_fetch_array($query)){
 
                                 </div>
                             </div>
+                            <?php } ?>
                         </div>
-                       
+
                         <div id="projects-copy" class="hide"> </div>
                     </div>
                 </div>
-                <?php } ?>
+            
             </div>
     </main>
 </div>
+
 
 <?php include('menu_footer/footer.php') ?>

@@ -15,7 +15,9 @@ while ($enreg = mysql_fetch_array($query)) {
     $adresse1 = $enreg['adresse1'] ; 
     $facebook = $enreg['facebook'] ; 
     $youtube = $enreg['youtube'] ; 
-    $instagram = $enreg['instagram'] ; 
+    $instagram = $enreg['instagram'] ;
+    
+   
 
 }
 ?>
@@ -111,10 +113,22 @@ while ($enreg = mysql_fetch_array($query)) {
                             <a href="<?php echo $mail ?>" target="_blank">
                                 <i class="fa fa-google-plus"></i></a>
                         </li>
-                        <li>
-                            <a href="<?php echo $instagram ?>" target="_blank">
-                                <i class="fa fa-instagram"></i></a>
-                        </li>
+
+                        <!-- INSTAGRAM LINK CONDITION IF EMPTY -->
+
+                        <?php
+                        if (empty($instagram)) {
+                           
+                         echo  ' <li> </li>';
+                           
+                            // echo '$instagram is either 0, empty, or not set at all';
+                        }else{
+                          echo'  <li> <a href="<?php echo $instagram ?>" target="_blank">
+                        <i class="fa fa-instagram"></i></a>
+                        </li>';
+                        }
+                        ?>
+                     
 
                     </ul>
                 </div>
@@ -150,7 +164,8 @@ while ($enreg = mysql_fetch_array($query)) {
                            MENU HOME START
                            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
                             <a class="navbar-brand" href="index.php">
-                                <img style="max-width : 120px" alt="logo" src="<?php echo 'sesadmin/'.$logo ?>" /></a>
+                                <img alt="logo" style="max-width : 120px ; margin-right : 40px !important ; "
+                                    src="<?php echo 'sesadmin/'.$logo ?>" /></a>
 
                             <li class="">
                                 <a href="index.php" role="button">
@@ -172,8 +187,6 @@ while ($enreg = mysql_fetch_array($query)) {
                                     data-toggle="dropdown" href="categorie.php?ID= <?php echo $enreg['id']; ?>"
                                     role="button">
                                     <?php echo $enreg['categorie']; ?> <span class="x-caret"></span></a>
-
-
                                 <ul class="dropdown-menu dropdown-menu-left">
                                     <?php 
                                 $req2 = "select * from souscategories where categorie=".$enreg['id'];
@@ -203,10 +216,10 @@ while ($enreg = mysql_fetch_array($query)) {
                                 <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                               SEARCH START
                               -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                                <div class="search-button-wrapper header-customize-item">
+                                <!-- <div class="search-button-wrapper header-customize-item">
                                     <a class="icon-search-menu" data-search-type="standard" href="#search">
                                         <i class="fa fa-search"></i></a>
-                                </div>
+                                </div> -->
 
 
                             </li>
